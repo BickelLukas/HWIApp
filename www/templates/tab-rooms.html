@@ -1,0 +1,24 @@
+<ion-view view-title="Rooms">
+    <ion-content>
+        <ion-list class="list">
+            <div ng-repeat="room in rooms">
+                <ion-item class="item-light item-icon-left item-text-wrap"
+                    ng-click="room.shown = !room.shown; resize()">
+                    <i class="icon" ng-class="room.shown ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
+                    <h2>{{room.title}}</h2>
+                    
+                </ion-item>
+                <div class="detail" ng-show="room.shown">
+                    <p>{{room.introduction}}</p>
+                    <h3>Schwerpunkte</h3>
+                    <p>{{room.focuspoints}}</p>
+                    <h3>Stationen</h3>
+                    <!--<ul>
+                        <li ng-repeat="station in room.stations.split(',')">{{station}}</li>
+                    </ul>-->
+                    <p>{{room.stations}}</p>
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

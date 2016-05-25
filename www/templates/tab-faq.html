@@ -1,0 +1,12 @@
+<ion-view view-title="FAQ">
+  <ion-content >
+    <div class="card" ng-repeat="faq in faqs">
+      <div class="item item-divider item-text-wrap">
+        <p><b>{{faq.question}}</b></p>
+      </div>
+      <div class="item item-text-wrap">
+        <p>{{faq.response}}</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

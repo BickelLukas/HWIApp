@@ -1,0 +1,127 @@
+/* Empty. Add your own CSS if you like */
+.tabs {
+   top: 0 !important;
+   height: 61px !important;
+}
+
+.tab-item-active {
+  border-bottom: 3px #a2c614  solid !important;
+}
+
+.tab-item .tab-title {
+  font-size: 1.2em;
+}
+
+.tab-item {
+    padding-top: 8px;
+    border-bottom: none;
+}
+
+.tab-item .icon{
+  font-size: 20px;
+  height: 20px;
+  margin-top: 6px !important;
+}
+
+.tab-item:not(:last-of-type) {
+  border-right: 1px #7f9fb7 dashed !important;
+}
+
+.has-tabs-top {
+  top: 61px !important; /*  height of the tabs */
+}
+
+.has-tabs {
+  top: 61px !important; /*  height of the tabs */
+  bottom: 0px;
+}
+
+.item-light {
+  border:none;
+  border-bottom: 1px #afafaf dotted !important;
+  background-color: transparent !important;
+}
+
+.item-light .icon {
+  color: #a2c614;
+  font-size: 20px;
+}
+
+.item-light h2 {
+  font-size: 1.15em;
+  padding-top: 0.15em;
+}
+
+.detail h3 {
+  font-size: 1.45em !important;
+}
+
+p {
+  font-size: 1.1em !important;
+}
+
+.item-accordion {
+  border: none !important;
+  background-color: #eee;
+}
+
+.checkbox-icon:before{
+  border-color: #afafaf !important;
+  border-width: 1px !important;
+}
+
+.detail {
+  background-color: #eee;
+  padding: 20px;
+  box-shadow: inset 0px 10px 10px #ccc;
+  border-top: 1px #afafaf solid !important;
+  border-bottom: 1px #afafaf solid !important;
+}
+
+ion-content {
+  background-image: url('../img/Welle.png');
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 80%;
+
+}
+.stundentafel {
+  /*border: 1px dotted #afafaf;*/
+}
+
+.stundentafel tr{
+  border-bottom: 1px dotted #afafaf;
+}
+
+.stundentafel  td {
+  padding: 2px;
+  border: 1px dotted #afafaf;
+}
+
+.stundentafel td:not(:first-of-type) {
+  text-align: center;
+}
+
+.stundentafel thead,tfoot {
+  font-weight: bold;
+  color: #a2c614;
+}
+
+.stundentafel .headline {
+  font-weight: bold;
+  text-align: center;
+}
+
+a, a:visited {
+  color: #003d70;
+}
+
+/*.checkbox input, .checkbox-icon{
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.checkbox-icon:after {
+  width: 50%;
+  height: 28%;
+}*/

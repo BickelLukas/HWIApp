@@ -1,0 +1,19 @@
+<ion-view view-title="Info">
+  <ion-content>
+    <ion-list class="list">
+        <div ng-repeat="info in infos">
+            <ion-item class="item-light item-icon-left item-text-wrap"
+                ng-click="info.shown = !info.shown; resize()">
+                <i class="icon" ng-class="info.shown ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
+                <h2>{{info.title}}</h2>
+            </ion-item>
+            <div class="detail" ng-show="info.shown">
+                <p>{{info.text}}</p>
+                <a href="#" ng-click="openLink(info.link)">{{info.linktext}}</a>
+                <div ng-bind-html="info.html"></div>
+            </div>
+        </div>
+    </ion-list>
+    {{e}}
+  </ion-content>
+</ion-view>

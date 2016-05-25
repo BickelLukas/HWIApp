@@ -1,0 +1,33 @@
+<ion-view view-title="Evaluierung">
+  <ion-content>
+    <ion-list>
+        <div ng-repeat="question in questions">
+          <ion-item class="item-light item-icon-left item-text-wrap"
+                    ng-click="question.shown = !question.shown; resize()">
+              <i class="icon" ng-class="question.shown ? 'ion-chevron-down' : 'ion-chevron-right'"></i>
+            {{question.question}}
+          </ion-item>
+          <ion-checkbox ng-if="question.multipleselection == true"
+            class="checkbox-balanced item-accordion item-text-wrap"
+            ng-repeat="answer in question.answers"
+            ng-show="question.shown"
+            ng-model="answer.selected">
+            {{answer.response}}
+          </ion-checkbox>
+          <ion-checkbox ng-if="question.multipleselection == false"
+            class="checkbox-balanced item-accordion item-text-wrap"
+            ng-repeat="answer in question.answers"
+            ng-show="question.shown"
+            ng-model="answer.selected"
+            ng-click="setChoice(question.id, answer.id)">
+            {{answer.response}}
+          </ion-checkbox>
+
+        </div>
+      </ion-list>
+      <button on-tap="send()" ng-show="questions.length > 0" class="button button-full button-light">Absenden</button>
+      <pre>
+        <h4 style="margin-left:10px">{{already}}</h4>
+      </pre>
+  </ion-content>
+</ion-view>

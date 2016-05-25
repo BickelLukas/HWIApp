@@ -1,0 +1,12 @@
+{
+  "name": "HWI",
+  "app_id": "344c3acc",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
